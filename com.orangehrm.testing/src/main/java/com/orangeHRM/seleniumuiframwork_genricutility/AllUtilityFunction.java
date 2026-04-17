@@ -1,4 +1,4 @@
-package com.orangehrm.seleniumuiframwork_genricutility;
+package com.orangeHRM.seleniumuiframwork_genricutility;
 
 import java.io.FileInputStream;
 import java.io.IOException;
