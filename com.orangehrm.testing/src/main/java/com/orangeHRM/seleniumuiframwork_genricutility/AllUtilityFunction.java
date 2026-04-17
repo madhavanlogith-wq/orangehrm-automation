@@ -11,9 +11,17 @@ import java.util.Random;
 import java.util.UUID;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class AllUtilityFunction {
+	WebDriver driver; 
+	Properties properties; 
+	public AllUtilityFunction() {
+		
+	}
 	// JAVA UTILITY
 		// Generate Random Numbers
 		public int getRandomNumber(int range) {
@@ -98,5 +106,37 @@ public class AllUtilityFunction {
 			String value = prop.getProperty(key);
 			return value;
 
+		}
+		
+		// drop down using action
+		public static void selectDropdownUsingKeyboard(WebDriver driver, WebElement dropdown, int index) {
+
+		    Actions actions = new Actions(driver);
+
+		    // Step 1: Click dropdown
+		    dropdown.click();
+
+		    // Step 2: Loop through options using ARROW_DOWN
+		    for (int i = 0; i < index; i++) {
+		        actions.sendKeys(Keys.ARROW_DOWN);
+		    }
+
+		    // Step 3: Press ENTER to select
+		    actions.sendKeys(Keys.ENTER).perform();
+		}
+		
+		// properties file management
+		
+		// 1 initialize properies
+		public void initProperties(String FILE_PATH) throws IOException {
+			FileInputStream fis = new FileInputStream(FILE_PATH);
+			properties = new Properties();
+			properties.load(fis);
+			fis.close();
+		}
+		
+		// 2 . get the value of the key
+		public String getPropertyValue(String key) {
+			return properties.getProperty(key);
 		}
 }

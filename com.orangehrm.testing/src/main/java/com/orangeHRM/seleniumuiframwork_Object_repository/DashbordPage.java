@@ -15,15 +15,40 @@ public class DashbordPage {
 
 	@FindBy(linkText="Recruitment")
 	private WebElement recrutmentLink;
+
+	@FindBy(linkText="PIM")
+	private WebElement leaveLink;
+	
+	@FindBy(linkText="Admin")
+	private WebElement adminLink;
+	
+	@FindBy(linkText="My Info")
+	private WebElement myInfoLink;
+
+	@FindBy(linkText="Time")
+	private WebElement timeLink;
+
+	@FindBy(linkText="Claim")
+	private WebElement claimLink;
+	
+	@FindBy(linkText="Maintenance")
+	private WebElement maintenceLink;
+	
+	@FindBy(linkText="Directory")
+	private WebElement directory;
+
+	@FindBy(linkText="Buzz")
+	private WebElement BuzzLink;
+
 	
 	public WebElement getRecrutmentLink() {
 		return recrutmentLink;
 	}
 
 	public void clickRecrutmentLink() {
-		getRecrutmentLink().click();;
+		getRecrutmentLink().click();
 	}
-
+	
 	public WebElement getPimLink() {
 		return pimLink;
 	}
