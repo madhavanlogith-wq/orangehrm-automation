@@ -18,11 +18,16 @@ public class LeaveModule {
 	public LeaveModule(Base base) {
 		this.base=base;
 	}
-	@When("navigate to leave module")
-	public void navigate_to_leave_module() {
+//	@When("navigate to leave module")
+//	public void navigate_to_leave_module() {
+//		Pages.dashboardpage.getLeaveLink().click();
+//		
+//	}
+	@When("navigate to leave module for  apply")
+	public void navigate_to_leave_module_for_apply() {
 		Pages.dashboardpage.getLeaveLink().click();
-		
 	}
+
 	@When("click on Apply")
 	public void click_on_apply() {
 		Pages.leavepage.getApplyBtn().click();
@@ -71,18 +76,48 @@ public class LeaveModule {
 	    
 	}
 	
-//	@When("click on My Leave")
-//	public void click_on_my_leave() {
-//	    Pages.leavepage.getMyLeaveBtn().click();
-//	}
-//	@When("select Leave Type")
-//	public void select_leave_type() {
-//	    
-//	}
-//	@Then("verify all filter fields are cleared")
-//	public void verify_all_filter_fields_are_cleared() {
-//	   
-//	}
+	@When("navigate to leave module for myleave")
+	public void navigate_to_leave_module_for_myleave() {
+		Pages.dashboardpage.getLeaveLink().click();
+	}
+
+	@When("click on My Leave")
+	public void click_on_my_leave() {
+	   Pages.leavepage.getMyLeaveBtn().click();
+	}
+	@When("select Myleave From Date {string}")
+	public void select_myleave_from_date(String fromDate) {
+		WebElement ele= Pages.myleave.getFromDate();
+		ele.clear();
+		ele.sendKeys(fromDate);
+	}
+	@When("select Myleave To Date {string}")
+	public void select_myleave_to_date(String toDate) {
+		WebElement ele = Pages.apply.getToDate();
+	    ele.click();
+	    ele.sendKeys(Keys.CONTROL + "a");
+	    ele.sendKeys(Keys.DELETE);
+	    ele.sendKeys(toDate);
+	    ele.sendKeys(Keys.TAB); // trigger UI update
+	}
+	@When("select Leave Type")
+	public void select_leave_type() {
+	    WebElement ele= Pages.myleave.getLeaveType();
+	    ele.sendKeys(Keys.DELETE);
+	    ele.sendKeys("CAN - FMLA");
+	    ele.sendKeys(Keys.TAB); // trigger UI update
+	    
+	}
+	@When("click on myleave search button")
+	public void click_on_myleave_search_button() {
+	   Pages.myleave.getSearchBtn();
+	}
+	@Then("verify all filter fields are cleared")
+	public void verify_all_filter_fields_are_cleared() {
+	  
+	}
+	
+
 
 
 }

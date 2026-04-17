@@ -14,7 +14,7 @@ public class MyLeavePage {
 	@FindBy(css =  "['oxd-select-text oxd-select-text--active oxd-select-text--error']")
 	WebElement showLeaveStatus;
 	
-	@FindBy(xpath = "//label[contains(text(),'Leave Type')]/parent::div/following-sibling::div/descendant::div[@class='oxd-select-text oxd-select-text--active']")
+	@FindBy(xpath = "//label[contains(text(),'Leave Type')]/parent::div/following-sibling::div/descendant::div[@class='oxd-select-text-input']")
 	WebElement leaveType;
 	
 	@FindBy(css = "[type='submit']")
