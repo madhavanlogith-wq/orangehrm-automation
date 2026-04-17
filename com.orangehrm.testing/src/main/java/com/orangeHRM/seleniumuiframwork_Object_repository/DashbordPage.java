@@ -16,6 +16,9 @@ public class DashbordPage {
 	@FindBy(linkText="Recruitment")
 	private WebElement recrutmentLink;
 	
+	@FindBy(css = "[href='/web/index.php/leave/viewLeaveModule']")
+	private WebElement leaveLink;
+	
 	public WebElement getRecrutmentLink() {
 		return recrutmentLink;
 	}
@@ -46,6 +49,11 @@ public class DashbordPage {
 	public void clickLogoutButton() {
 		getLogoutButton().click();
 	}
+	
+	public WebElement getLeaveLink() {
+		return leaveLink;
+	}
+
 	public void dashboardPage() {
 		clickPimLink();
 		clickLogoutDroupDown();
@@ -55,4 +63,5 @@ public class DashbordPage {
 		clickLogoutDroupDown();
 		clickLogoutButton();
 	}
+	
 }
