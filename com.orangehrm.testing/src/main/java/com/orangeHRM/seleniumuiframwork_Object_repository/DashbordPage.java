@@ -1,4 +1,4 @@
-package com.orangeHRM.seleniumuiframwork_Object_repository;
+package com.orangehrm.seleniumuiframwork_Object_repository;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,40 +15,18 @@ public class DashbordPage {
 
 	@FindBy(linkText="Recruitment")
 	private WebElement recrutmentLink;
-
-	@FindBy(linkText="PIM")
+	
+	@FindBy(css = "[href='/web/index.php/leave/viewLeaveModule']")
 	private WebElement leaveLink;
-	
-	@FindBy(linkText="Admin")
-	private WebElement adminLink;
-	
-	@FindBy(linkText="My Info")
-	private WebElement myInfoLink;
-
-	@FindBy(linkText="Time")
-	private WebElement timeLink;
-
-	@FindBy(linkText="Claim")
-	private WebElement claimLink;
-	
-	@FindBy(linkText="Maintenance")
-	private WebElement maintenceLink;
-	
-	@FindBy(linkText="Directory")
-	private WebElement directory;
-
-	@FindBy(linkText="Buzz")
-	private WebElement BuzzLink;
-
 	
 	public WebElement getRecrutmentLink() {
 		return recrutmentLink;
 	}
 
 	public void clickRecrutmentLink() {
-		getRecrutmentLink().click();
+		getRecrutmentLink().click();;
 	}
-	
+
 	public WebElement getPimLink() {
 		return pimLink;
 	}
@@ -71,6 +49,11 @@ public class DashbordPage {
 	public void clickLogoutButton() {
 		getLogoutButton().click();
 	}
+	
+	public WebElement getLeaveLink() {
+		return leaveLink;
+	}
+
 	public void dashboardPage() {
 		clickPimLink();
 		clickLogoutDroupDown();
@@ -80,4 +63,5 @@ public class DashbordPage {
 		clickLogoutDroupDown();
 		clickLogoutButton();
 	}
+	
 }

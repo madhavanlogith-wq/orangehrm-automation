@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="8" passed="0" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -1112,6 +1113,67 @@ at ✽.user launches browser and opens application(file:///D:/project1/orangehrm
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.orangehrm.testing.runner.runnerio -->
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-17T09:51:39 IST" name="Default suite" finished-at="2026-04-17T09:52:06 IST" duration-ms="27230">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.testing.runner.RunnerIo@24313fcc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-04-17T09:51:39 IST" name="Default test" finished-at="2026-04-17T09:52:06 IST" duration-ms="27230">
+      <class name="com.orangehrm.testing.runner.RunnerIo">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.orangehrm.testing.runner.RunnerIo@24313fcc]" started-at="2026-04-17T09:51:39 IST" name="setUpClass" finished-at="2026-04-17T09:51:39 IST" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@745c2004]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.testing.runner.RunnerIo@24313fcc]" started-at="2026-04-17T09:51:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-17T09:51:55 IST" duration-ms="15788" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply Leave"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Leave Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.testing.runner.RunnerIo@24313fcc]" started-at="2026-04-17T09:51:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-17T09:52:06 IST" duration-ms="11128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["My Leave"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Leave Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.orangehrm.testing.runner.RunnerIo@24313fcc]" started-at="2026-04-17T09:52:06 IST" name="tearDownClass" finished-at="2026-04-17T09:52:06 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.orangehrm.testing.runner.RunnerIo -->
+>>>>>>> refs/remotes/origin/user1
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
