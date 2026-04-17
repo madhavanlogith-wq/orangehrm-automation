@@ -102,6 +102,7 @@ public class LoginPage {
 		setPassWord(passWord);
 		setLogIn();
 	}
+	
 
 	
 }
