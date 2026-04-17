@@ -64,4 +64,8 @@ public class DashbordPage {
 		clickLogoutButton();
 	}
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/user5

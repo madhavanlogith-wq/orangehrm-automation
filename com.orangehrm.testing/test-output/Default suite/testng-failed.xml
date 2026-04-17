@@ -4,6 +4,7 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.orangehrm.testing.runner.runnerio">
         <methods>
           <include name="setUpClass"/>
@@ -20,6 +21,15 @@
         </methods>
       </class> <!-- com.orangehrm.testing.runner.RunnerIo -->
 >>>>>>> refs/remotes/origin/user1
+=======
+      <class name="com.orangehrm.testing.runner.RunnerIo">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.orangehrm.testing.runner.RunnerIo -->
+>>>>>>> refs/remotes/origin/user5
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

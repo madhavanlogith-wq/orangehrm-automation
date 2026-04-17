@@ -1,6 +1,5 @@
 package com.orangehrm.seleniumuiframwork_Object_repository;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -105,4 +104,3 @@ public class LoginPage {
 
 	
 }
-

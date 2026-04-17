@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.orangehrm.seleniumuiframwork_genricutility;
 
 import org.openqa.selenium.WebDriver;
@@ -36,4 +37,46 @@ public class Pages {
 		myleave=PageFactory.initElements(driver, MyLeavePage.class);
 		myleavereport=PageFactory.initElements(driver, MyLeaveReportPage.class);
 	}
+=======
+package com.orangeHRM.seleniumuiframwork_genricutility;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.orangeHRM.seleniumuiframwork_Object_repository.ContactDetailsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.DashbordPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.DependentsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.EmergencyContactsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.JobDetailsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.LoginPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.PersonalDetailsPage;
+
+public class Pages {
+    // ================= PAGE OBJECT DECLARATIONS =================
+
+    public static LoginPage LoginPage;
+    public static DashbordPage dashboardpage;
+
+    public static PersonalDetailsPage personalDetailsPage;
+    public static ContactDetailsPage contactDetailsPage;
+    public static EmergencyContactsPage emergencyContactsPage;
+    public static DependentsPage dependentsPage;
+    public static JobDetailsPage jobDetailsPage;
+
+    // ================= INITIALIZATION METHOD =================
+
+    public static void loadAllPages(WebDriver driver) {
+
+        // Object repository pages
+        LoginPage = PageFactory.initElements(driver, LoginPage.class);
+        dashboardpage = PageFactory.initElements(driver, DashbordPage.class);
+
+        // My Info Pages
+        personalDetailsPage= PageFactory.initElements(driver, PersonalDetailsPage.class);
+        contactDetailsPage = PageFactory.initElements(driver, ContactDetailsPage.class);
+        emergencyContactsPage = PageFactory.initElements(driver, EmergencyContactsPage.class);
+        dependentsPage = PageFactory.initElements(driver, DependentsPage.class);
+        jobDetailsPage = PageFactory.initElements(driver, JobDetailsPage.class);
+    }
+>>>>>>> refs/remotes/origin/user5
 }
