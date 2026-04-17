@@ -10,14 +10,10 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.UUID;
 
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+
 
 public class AllUtilityFunction {
-	WebDriver driver; 
+	 
 	Properties properties; 
 	public AllUtilityFunction() {
 		
