@@ -1,53 +1,56 @@
 package com.orangeHRM.selemiumuiframework_Object_repository.time;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import java.time.Duration;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.ui.*;
 
 public class Attendance {
-	
-	   
-    @FindBy(xpath = "//span[contains(@class,'oxd-topbar-body-nav-tab-item') and normalize-space()='Attendance']")
-    WebElement Attendance_section;
-    
-    @FindBy(xpath = "//label[contains(text(),'Event')]/parent::div//following-sibling::div")
-    WebElement Eventdropdown;
-    
-    @FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
-    WebElement PunchIn;
-    
-   
-    
-    
-    
 
-    public void openSubmitClaimTab() {
-        submitClaim.click();
+    WebDriver driver;
+    WebDriverWait wait;
+
+    public Attendance(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void selectEvent(String eventName) {
-        Eventdropdown.click();
-        driver.findElement(By.xpath("//span[text()='" + eventName + "']")).click();
+    @FindBy(xpath = "//span[normalize-space()='Time']")
+    WebElement timeMenu;
+
+    @FindBy(xpath = "//span[contains(text(),'Attendance')]")
+    WebElement attendanceSection;
+
+    @FindBy(xpath = "//a[normalize-space()='Punch In/Out']")
+    WebElement punchPage;
+
+    // ✅ FIXED LOCATOR (TEXT BASED = STABLE)
+    @FindBy(xpath = "//button[contains(.,'In')]")
+    WebElement punchInBtn;
+
+    public void openTimeModule() {
+        wait.until(ExpectedConditions.elementToBeClickable(timeMenu)).click();
     }
 
-    public void selectCurrency(String Currencyname) {
-        Currencydropdown.click();
-        driver.findElement(By.xpath("//span[text()='" + Currencyname + "']")).click();
+    public void openAttendanceSection() {
+        wait.until(ExpectedConditions.elementToBeClickable(attendanceSection)).click();
     }
 
-    public void enterRemarks(String remark) {
-        Remarksarea.sendKeys(remark);
+    public void openPunchSection() {
+        wait.until(ExpectedConditions.elementToBeClickable(punchPage)).click();
     }
 
-    public void clickCreate() {
-        Createbutton.click();
+    public void clickPunchIn() {
+        wait.until(ExpectedConditions.elementToBeClickable(punchInBtn)).click();
     }
-    
-    public void clickSubmit() {
-    	Submitbutton.click();
-    }
-	
-	
 
+    public boolean isPunchInButtonGone() {
+        try {
+            wait.until(ExpectedConditions.invisibilityOf(punchInBtn));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }
-

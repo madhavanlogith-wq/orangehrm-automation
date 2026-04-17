@@ -1,17 +1,53 @@
 package com.orangeHRM.selemiumuiframework_Object_repository.time;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import java.time.Duration;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.ui.*;
 
 public class Reports {
-	
-	 @FindBy(xpath = "//span[contains(@class,'oxd-topbar-body-nav-tab-item') and normalize-space()='Reports']")
-	    WebElement Reports_section ;
-	    
-	    @FindBy(css = "[placeholder='Type for hints...']")
-	    WebElement Project_name;
-	    
-	    @FindBy(xpath="//button[@class='oxd-button oxd-button--medium oxd-button--secondary']")
-	    WebElement Viewbutton;
 
+    WebDriver driver;
+    WebDriverWait wait;
+
+    public Reports(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
+    // ================= LOCATORS =================
+
+    @FindBy(xpath = "//span[normalize-space()='Reports']")
+    WebElement reportsSection;
+
+    @FindBy(xpath = "//a[normalize-space()='Project Reports']")
+    WebElement projectReports;
+
+    @FindBy(xpath = "//button[contains(.,'View')]")
+    WebElement viewButton;
+
+    @FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']")
+    WebElement reqMsg;
+
+    // ================= ACTION METHODS =================
+
+    public void openReportsSection() {
+        wait.until(ExpectedConditions.elementToBeClickable(reportsSection)).click();
+    }
+
+    public void openProjectReports() {
+        wait.until(ExpectedConditions.elementToBeClickable(projectReports)).click();
+    }
+
+    public void clickView() {
+        wait.until(ExpectedConditions.elementToBeClickable(viewButton)).click();
+    }
+
+    // ================= ASSERTION =================
+
+    public String getRequiredMessage() {
+        wait.until(ExpectedConditions.visibilityOf(reqMsg));
+        return reqMsg.getText();
+    }
 }

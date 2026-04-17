@@ -4,17 +4,12 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import com.orangeHRM.seleniumuiframwork_Object_repository.Loginpage2;
-import com.orangeHRM.seleniumuiframwork_genricutility.Base;
 
 public class Hook {
 
-    public static WebDriver driver;
-    private Base base;
-    
-    public Hook(Base base) {
-    	this.base=base;
-    }
+    private static WebDriver driver;
 
     @Before
     public void setUp() {
@@ -24,7 +19,7 @@ public class Hook {
 
         driver.get("https://opensource-demo.orangehrmlive.com/");
 
-        // LOGIN HERE FOR EVERY SCENARIO
+        // ✅ Login
         Loginpage2 login = new Loginpage2(driver);
         login.enterUsername("Admin");
         login.enterPassword("admin123");
@@ -40,6 +35,7 @@ public class Hook {
         }
     }
 
+    // ✅ SINGLE SOURCE OF DRIVER
     public static WebDriver getDriver() {
         return driver;
     }
