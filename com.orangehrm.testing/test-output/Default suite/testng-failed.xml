@@ -5,6 +5,7 @@
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.orangehrm.testing.runner.runnerio">
         <methods>
           <include name="setUpClass"/>
@@ -30,6 +31,15 @@
         </methods>
       </class> <!-- com.orangehrm.testing.runner.RunnerIo -->
 >>>>>>> refs/remotes/origin/user5
+=======
+      <class name="com.orangehrm.testing.runner.RunnerIo">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- com.orangehrm.testing.runner.RunnerIo -->
+>>>>>>> refs/remotes/origin/user3
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

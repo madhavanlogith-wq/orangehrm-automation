@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 package com.orangeHRM.seleniumuiframwork_genricutility;
 
@@ -56,5 +57,10 @@ public class Pages {
     // ================= INITIALIZATION METHOD =================
 
    
+=======
+package com.orangeHRM.seleniumuiframwork_genricutility;
+
+public class Pages {
+>>>>>>> refs/remotes/origin/user3
 
 }
