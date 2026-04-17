@@ -1,5 +1,6 @@
 package com.orangehrm.testing.stepdefinition;
 
+<<<<<<< HEAD
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
@@ -44,3 +45,8 @@ public class Hooks extends AllUtilityFunction {
 //			base.driver.quit();
 		}
 	}
+=======
+public class Hooks {
+
+}
+>>>>>>> refs/remotes/origin/user4
