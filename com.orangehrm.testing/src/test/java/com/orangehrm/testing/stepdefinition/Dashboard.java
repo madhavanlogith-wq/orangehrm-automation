@@ -1,7 +1,6 @@
-package stepdefinition.dashboard;
+package com.orangehrm.testing.stepdefinition;
 
 import com.orangeHRM.seleniumuiframwork_Object_repository.Dashboard2;
-import com.orangehrm.testing.stepdefinition.Hook;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

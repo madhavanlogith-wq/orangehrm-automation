@@ -1,6 +1,7 @@
-package pages;
+package com.orangeHRM.seleniumuiframwork_Object_repository;
 
 import java.time.Duration;
+
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,18 +9,19 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.orangehrm.testing.utilities.BaseClass;
+import com.orangeHRM.seleniumuiframwork_genricutility.Base;
 
-public class RecruitmentPage extends BaseClass {
 
+public class RecruitmentPage  {
+	private Base base;
     WebDriverWait wait;
 
     public RecruitmentPage() {
-        PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        PageFactory.initElements(base.driver, this);
+        wait = new WebDriverWait(base.driver, Duration.ofSeconds(10));
     }
 
-    // ================= LOCATORS =================
+  
 
     @FindBy(xpath = "//span[text()='Recruitment']")
     WebElement recruitmentMenu;
@@ -42,7 +44,7 @@ public class RecruitmentPage extends BaseClass {
     @FindBy(xpath = "//div[contains(text(),'Successfully')]")
     WebElement successMsg;
 
-    // ================= BUSINESS METHODS =================
+
 
     public void navigateToRecruitment() {
         wait.until(ExpectedConditions.elementToBeClickable(recruitmentMenu)).click();

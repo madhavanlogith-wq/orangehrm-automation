@@ -1,4 +1,4 @@
-package stepdefinition.buzz;
+package com.orangehrm.testing.stepdefinition;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

@@ -1,11 +1,11 @@
-package pages;
+package com.orangeHRM.seleniumuiframwork_Object_repository;
 
 import org.openqa.selenium.By;
 
-import com.orangehrm.testing.utilities.BaseClass;
+import com.orangeHRM.seleniumuiframwork_genricutility.Base;
 
 public class CandidatePage {
-
+	private Base base;
     By recruitmentMenu = By.xpath("//span[text()='Recruitment']");
     By addBtn = By.xpath("//button[contains(.,'Add')]");
     By firstName = By.name("firstName");
@@ -14,14 +14,14 @@ public class CandidatePage {
     By saveBtn = By.xpath("//button[@type='submit']");
 
     public void openRecruitment() {
-        BaseClass.driver.findElement(recruitmentMenu).click();
+       base.driver.findElement(recruitmentMenu).click();
     }
 
     public void addCandidate(String fn, String ln, String mail) {
-        BaseClass.driver.findElement(addBtn).click();
-        BaseClass.driver.findElement(firstName).sendKeys(fn);
-        BaseClass.driver.findElement(lastName).sendKeys(ln);
-        BaseClass.driver.findElement(email).sendKeys(mail);
-        BaseClass.driver.findElement(saveBtn).click();
+        base.driver.findElement(addBtn).click();
+        base.driver.findElement(firstName).sendKeys(fn);
+        base.driver.findElement(lastName).sendKeys(ln);
+        base.driver.findElement(email).sendKeys(mail);
+        base.driver.findElement(saveBtn).click();
     }
 }

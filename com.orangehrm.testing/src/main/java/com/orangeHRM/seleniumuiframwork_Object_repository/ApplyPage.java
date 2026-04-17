@@ -1,4 +1,4 @@
-package com.orangeHRM.testing.objectrepository.leaveModule;
+package com.orangeHRM.seleniumuiframwork_Object_repository;
 
 import org.openqa.selenium.WebElement;
 

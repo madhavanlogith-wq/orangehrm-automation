@@ -1,4 +1,4 @@
-package com.orangeHRM.selemiumuiframework_Object_repository.time;
+package com.orangeHRM.seleniumuiframwork_Object_repository;
 
 import java.time.Duration;
 import org.openqa.selenium.*;

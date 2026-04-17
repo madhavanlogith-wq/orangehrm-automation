@@ -2,9 +2,9 @@ package com.orangehrm.testing.stepdefinition;
 
 import org.testng.Assert;
 
-import com.orangeHRM.selemiumuiframework_Object_repository.time.Attendance;
-import com.orangeHRM.selemiumuiframework_Object_repository.time.Reports;
-import com.orangeHRM.selemiumuiframework_Object_repository.time.Project_Info;
+import com.orangeHRM.seleniumuiframwork_Object_repository.Attendance;
+import com.orangeHRM.seleniumuiframwork_Object_repository.Project_Info;
+import com.orangeHRM.seleniumuiframwork_Object_repository.Reports;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

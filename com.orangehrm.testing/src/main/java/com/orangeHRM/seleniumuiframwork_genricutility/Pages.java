@@ -1,10 +1,24 @@
-<<<<<<< HEAD
+
 
 package com.orangeHRM.seleniumuiframwork_genricutility;
 
-import com.orangehrm.seleniumuiframwork_Object_repository.DashbordPage;
-import com.orangehrm.seleniumuiframwork_Object_repository.LoginPage;
-import com.orangehrm.testing.objectrepository.leaveModule.ApplyPage;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.orangeHRM.seleniumuiframwork_Object_repository.AddEntitlementsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.ApplyPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.ContactDetailsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.DashbordPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.DependentsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.EmergencyContactsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.JobDetailsPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.LeaveListPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.LeavePage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.LeavePeriodPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.LoginPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.MyLeavePage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.MyLeaveReportPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.PersonalDetailsPage;
 
 public class Pages {
 	
@@ -36,9 +50,7 @@ public class Pages {
 		myleave=PageFactory.initElements(driver, MyLeavePage.class);
 		myleavereport=PageFactory.initElements(driver, MyLeaveReportPage.class);
         // Object repository pages
-        LoginPage = PageFactory.initElements(driver, LoginPage.class);
         dashboardpage = PageFactory.initElements(driver, DashbordPage.class);
-
         // My Info Pages
         personalDetailsPage= PageFactory.initElements(driver, PersonalDetailsPage.class);
         contactDetailsPage = PageFactory.initElements(driver, ContactDetailsPage.class);
@@ -46,21 +58,4 @@ public class Pages {
         dependentsPage = PageFactory.initElements(driver, DependentsPage.class);
         jobDetailsPage = PageFactory.initElements(driver, JobDetailsPage.class);
 	}
-=======
-
-
-
-    // ================= PAGE OBJECT DECLARATIONS =================
-
-
-
-    // ================= INITIALIZATION METHOD =================
-
-   
-=======
-package com.orangeHRM.seleniumuiframwork_genricutility;
-
-public class Pages {
->>>>>>> refs/remotes/origin/user3
-
 }

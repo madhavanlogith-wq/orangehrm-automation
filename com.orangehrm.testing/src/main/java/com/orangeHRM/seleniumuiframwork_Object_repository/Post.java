@@ -1,4 +1,4 @@
-package com.orangeHRM.selemiumuiframework_Object_repository.buzz;
+package com.orangeHRM.seleniumuiframwork_Object_repository;
 
 
 import org.openqa.selenium.WebDriver;

@@ -1,6 +1,7 @@
 package com.orangeHRM.seleniumuiframwork_genricutility;
 
 import java.io.FileInputStream;
+
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -10,7 +11,11 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.UUID;
 
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 
 

@@ -1,4 +1,4 @@
-package com.orangehrm.seleniumuiframwork_Object_repository;
+package com.orangeHRM.seleniumuiframwork_Object_repository;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -63,9 +63,6 @@ public class DashbordPage {
 		clickLogoutDroupDown();
 		clickLogoutButton();
 	}
-	
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> refs/remotes/origin/user5
+

@@ -1,4 +1,4 @@
-package com.orangeHRM.seleniumuiframwork_Object_repository_pim;
+package com.orangeHRM.seleniumuiframwork_Object_repository;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

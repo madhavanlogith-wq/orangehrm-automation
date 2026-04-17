@@ -3,7 +3,7 @@ package com.orangehrm.testing.stepdefinition;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-import com.orangeHRM.seleniumuiframwork_Object_repository_pim.AddUserPage;
+import com.orangeHRM.seleniumuiframwork_Object_repository.AddUserPage;
 import com.orangeHRM.seleniumuiframwork_genricutility.Base;
 import com.orangeHRM.seleniumuiframwork_genricutility.Pages;
 

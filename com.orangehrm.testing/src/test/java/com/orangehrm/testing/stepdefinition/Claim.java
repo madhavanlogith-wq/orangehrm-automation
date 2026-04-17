@@ -3,7 +3,7 @@ package com.orangehrm.testing.stepdefinition;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
 
-import com.orangeHRM.selemiumuiframework_Object_repository.claim.Submit_Claim;
+import com.orangeHRM.seleniumuiframwork_Object_repository.Submit_Claim;
 
 public class Claim {
 

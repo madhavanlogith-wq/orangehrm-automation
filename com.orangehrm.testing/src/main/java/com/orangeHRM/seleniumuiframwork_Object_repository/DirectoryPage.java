@@ -1,4 +1,4 @@
-package com.orangehrm.testing.objectrepository.directoryModule;
+package com.orangeHRM.seleniumuiframwork_Object_repository;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
