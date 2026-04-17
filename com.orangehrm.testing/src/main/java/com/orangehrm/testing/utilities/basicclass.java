@@ -1,5 +1,5 @@
 package com.orangehrm.testing.utilities;
 
-public class AllUtilityFunctions {
+public class basicclass {
 
 }
