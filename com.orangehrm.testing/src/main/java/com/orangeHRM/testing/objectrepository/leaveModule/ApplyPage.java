@@ -1,6 +1,7 @@
-package com.orangehrm.testing.objectrepository.leaveModule;
+package com.orangeHRM.testing.objectrepository.leaveModule;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 
 

@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-package com.orangehrm.seleniumuiframwork_genricutility;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+package com.orangeHRM.seleniumuiframwork_genricutility;
 
 import com.orangehrm.seleniumuiframwork_Object_repository.DashbordPage;
 import com.orangehrm.seleniumuiframwork_Object_repository.LoginPage;
-import com.orangehrm.testing.objectrepository.leaveModule.AddEntitlementsPage;
 import com.orangehrm.testing.objectrepository.leaveModule.ApplyPage;
-import com.orangehrm.testing.objectrepository.leaveModule.LeaveListPage;
-import com.orangehrm.testing.objectrepository.leaveModule.LeavePage;
-import com.orangehrm.testing.objectrepository.leaveModule.LeavePeriodPage;
-import com.orangehrm.testing.objectrepository.leaveModule.MyLeavePage;
-import com.orangehrm.testing.objectrepository.leaveModule.MyLeaveReportPage;
 
 public class Pages {
 	
@@ -25,6 +16,13 @@ public class Pages {
 	public static LeavePeriodPage leaveperiod;
 	public static MyLeavePage myleave;
 	public static MyLeaveReportPage myleavereport;
+ 
+
+    public static PersonalDetailsPage personalDetailsPage;
+    public static ContactDetailsPage contactDetailsPage;
+    public static EmergencyContactsPage emergencyContactsPage;
+    public static DependentsPage dependentsPage;
+    public static JobDetailsPage jobDetailsPage;
 	
 	public static void loadAllPages(WebDriver driver) {
 		loginpage = PageFactory.initElements(driver, LoginPage.class);
@@ -36,37 +34,6 @@ public class Pages {
 		leaveperiod=PageFactory.initElements(driver, LeavePeriodPage.class);
 		myleave=PageFactory.initElements(driver, MyLeavePage.class);
 		myleavereport=PageFactory.initElements(driver, MyLeaveReportPage.class);
-	}
-=======
-package com.orangeHRM.seleniumuiframwork_genricutility;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-
-import com.orangeHRM.seleniumuiframwork_Object_repository.ContactDetailsPage;
-import com.orangeHRM.seleniumuiframwork_Object_repository.DashbordPage;
-import com.orangeHRM.seleniumuiframwork_Object_repository.DependentsPage;
-import com.orangeHRM.seleniumuiframwork_Object_repository.EmergencyContactsPage;
-import com.orangeHRM.seleniumuiframwork_Object_repository.JobDetailsPage;
-import com.orangeHRM.seleniumuiframwork_Object_repository.LoginPage;
-import com.orangeHRM.seleniumuiframwork_Object_repository.PersonalDetailsPage;
-
-public class Pages {
-    // ================= PAGE OBJECT DECLARATIONS =================
-
-    public static LoginPage LoginPage;
-    public static DashbordPage dashboardpage;
-
-    public static PersonalDetailsPage personalDetailsPage;
-    public static ContactDetailsPage contactDetailsPage;
-    public static EmergencyContactsPage emergencyContactsPage;
-    public static DependentsPage dependentsPage;
-    public static JobDetailsPage jobDetailsPage;
-
-    // ================= INITIALIZATION METHOD =================
-
-    public static void loadAllPages(WebDriver driver) {
-
         // Object repository pages
         LoginPage = PageFactory.initElements(driver, LoginPage.class);
         dashboardpage = PageFactory.initElements(driver, DashbordPage.class);
@@ -77,6 +44,17 @@ public class Pages {
         emergencyContactsPage = PageFactory.initElements(driver, EmergencyContactsPage.class);
         dependentsPage = PageFactory.initElements(driver, DependentsPage.class);
         jobDetailsPage = PageFactory.initElements(driver, JobDetailsPage.class);
-    }
->>>>>>> refs/remotes/origin/user5
+	}
+=======
+
+
+
+    // ================= PAGE OBJECT DECLARATIONS =================
+
+
+
+    // ================= INITIALIZATION METHOD =================
+
+   
+
 }
