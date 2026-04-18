@@ -81,14 +81,23 @@ public class Project_Info {
         wait.until(ExpectedConditions.elementToBeClickable(saveBtn)).click();
     }
     public String getSuccessMessage() {
-        try {
-            WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[contains(@class,'oxd-toast-content--success')]//p")
-            ));
-            return msg.getText();
-        } catch (Exception e) {
-            return "";
+
+        By toast = By.xpath("//div[contains(@class,'oxd-toast-content--success')]//p");
+
+        for (int i = 0; i < 5; i++) {
+            try {
+                String msg = driver.findElement(toast).getText();
+                if (!msg.isEmpty()) {
+                    return msg;
+                }
+            } catch (Exception ignored) {}
+
+            try {
+                Thread.sleep(300); // small retry window
+            } catch (InterruptedException e) {}
         }
+
+        return "";
     }
 //    public String getSuccessMessage() {
 //        return wait.until(ExpectedConditions.visibilityOf(successMsg)).getText();

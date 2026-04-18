@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverFactory {
 
-    // ✅ Thread-safe driver storage
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static void initDriver() {
@@ -14,13 +13,16 @@ public class DriverFactory {
     }
 
     public static WebDriver getDriver() {
+        if (driver.get() == null) {
+            throw new RuntimeException("Driver not initialized. Check @Before hook.");
+        }
         return driver.get();
     }
 
     public static void quitDriver() {
         if (driver.get() != null) {
             driver.get().quit();
-            driver.remove(); // important cleanup
+            driver.remove();
         }
     }
 }

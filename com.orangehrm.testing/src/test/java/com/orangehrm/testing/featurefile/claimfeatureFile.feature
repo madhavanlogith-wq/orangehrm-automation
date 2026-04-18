@@ -20,7 +20,7 @@ Then claim should be submitted successfully
   Scenario: Search claim by reference ID and verify navigation using dynamic URL
 
     When user clicks on My Claims section
-    And user enters reference ID "202604180000008"
+    And user enters reference ID "202604180000007"
     And user selects reference ID from dropdown
     And user clicks on Search button
 

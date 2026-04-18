@@ -1,6 +1,6 @@
 package com.orangehrm.testing.stepdefinition;
 import com.orangehrm.testing.stepdefinition.Hook;
-import utils.DriverFactory;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +16,7 @@ public class CommonSteps {
     WebDriverWait wait;
     
     public CommonSteps() {
-        this.driver = DriverFactory.getDriver();   // ✅ safe access
+        this.driver =Hook.getDriver();   // ✅ safe access
     }
 
     @Given("user is on Time page")

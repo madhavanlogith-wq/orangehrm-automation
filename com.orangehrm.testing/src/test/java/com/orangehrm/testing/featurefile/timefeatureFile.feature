@@ -26,6 +26,6 @@
 
 Examples:
   | projectName                 | customerName |
-  | project1soga               | fr           |
-  | testProject4soga           | fr           |
+  | project1sogaaanave23               | fr           |
+  | testProject4sogaaanave23           | fr           |
   

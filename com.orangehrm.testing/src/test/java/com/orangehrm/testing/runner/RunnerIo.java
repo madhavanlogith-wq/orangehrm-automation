@@ -17,7 +17,6 @@ import org.testng.annotations.DataProvider;
 )
 public class RunnerIo extends AbstractTestNGCucumberTests {
 
-    // PARALLEL EXECUTION
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {
@@ -32,7 +31,7 @@ public class RunnerIo extends AbstractTestNGCucumberTests {
 //import io.cucumber.testng.CucumberOptions;
 //
 //@CucumberOptions(
-//        features = "src/test/java/com/orangehrm/testing/featurefile/timefeaturefile.feature",
+//        features = "src/test/java/com/orangehrm/testing/featurefile/buzzfeaturefile.feature",
 //        glue = {"com.orangehrm.testing.stepdefinition"},
 //        plugin = {
 //                "pretty",
