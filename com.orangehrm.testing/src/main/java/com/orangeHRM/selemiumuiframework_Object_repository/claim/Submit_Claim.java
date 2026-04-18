@@ -21,7 +21,7 @@ public class Submit_Claim {
     @FindBy(xpath = "//span[normalize-space()='Claim']")
     WebElement claimMenu;
 
-    @FindBy(xpath = "//a[normalize-space()='Submit Claim']")
+    @FindBy(xpath = "//a[contains(text(),'Submit Claim')]")
     WebElement submitClaim;
 
     @FindBy(xpath = "//label[contains(.,'Event')]/following::div[1]")
@@ -38,6 +38,11 @@ public class Submit_Claim {
 
     @FindBy(xpath = "//button[contains(.,'Submit')]")
     WebElement submitButton;
+    
+//    @FindBy(xpath = "//p[contains(@class,'oxd-toast-content-text')]/parent::div[contains(@class,'oxd-toast-content') and contains(@class,'oxd-toast-content--success')]")
+//    WebElement successMsg;
+    
+    By successMsg = By.xpath("//div[contains(@class,'oxd-toast-content--success')]//p");
 
     // ===== ACTIONS =====
 
@@ -57,7 +62,16 @@ public class Submit_Claim {
     }
 
     public void selectCurrency(String currency) {
+
+        // wait until page loader disappears (IMPORTANT FIX)
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(
+            By.xpath("//div[contains(@class,'oxd-form-loader')]")
+        ));
+
+        // now click dropdown
         wait.until(ExpectedConditions.elementToBeClickable(currencyDropdown)).click();
+
+        // select value
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//span[text()='" + currency + "']")
         )).click();
@@ -87,16 +101,18 @@ public class Submit_Claim {
         ));
     }
 
-    public boolean isClaimSubmitted() {
 
-        boolean submitGone = driver.findElements(
-            By.xpath("//button[contains(.,'Submit')]")
-        ).isEmpty();
+    public String getSuccessMessage() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        boolean cancelVisible = driver.findElements(
-            By.xpath("//button[contains(.,'Cancel')]")
-        ).size() > 0;
+        WebElement msgElement = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//div[contains(@class,'oxd-toast-content--success')]//p")
+            )
+        );
 
-        return submitGone && cancelVisible;
+        return msgElement.getText();
     }
     }
+
+    

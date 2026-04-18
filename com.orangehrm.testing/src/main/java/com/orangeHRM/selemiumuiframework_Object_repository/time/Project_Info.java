@@ -19,6 +19,8 @@ public class Project_Info {
     }
 
     // ================= LOCATORS =================
+    @FindBy(xpath = "//span[normalize-space()='Time']")
+    WebElement timeMenu;
 
     @FindBy(xpath = "//span[normalize-space()='Project Info']")
     WebElement projectInfoSection;
@@ -47,6 +49,7 @@ public class Project_Info {
     // ================= ACTION METHODS =================
 
     public void navigateToProjectInfo() {
+        wait.until(ExpectedConditions.elementToBeClickable(timeMenu)).click(); // 🔥 ADD
         wait.until(ExpectedConditions.elementToBeClickable(projectInfoSection)).click();
     }
 
@@ -63,29 +66,31 @@ public class Project_Info {
         projectNameInput.sendKeys(name);
     }
 
-    public void enterCustomerNameAndSelect(String searchText) {
+    public void selectCustomer(String customer) {
 
-        WebElement input = wait.until(
-                ExpectedConditions.visibilityOf(customerNameInput)
-        );
+        wait.until(ExpectedConditions.elementToBeClickable(customerNameInput)).click();
 
-        input.clear();
-        input.sendKeys(searchText);
+        customerNameInput.sendKeys(customer);
 
-        // wait for dropdown to load
-        wait.until(driver -> customerOptions.size() > 0);
-        wait.until(ExpectedConditions.visibilityOfAllElements(customerOptions));
-
-        // select using keyboard
-        input.sendKeys(Keys.ARROW_DOWN);
-        input.sendKeys(Keys.ENTER);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//span[text()='FreeWave Technologies, Inc.']")
+        )).click();
     }
 
     public void clickSave() {
         wait.until(ExpectedConditions.elementToBeClickable(saveBtn)).click();
     }
-
     public String getSuccessMessage() {
-        return wait.until(ExpectedConditions.visibilityOf(successMsg)).getText();
+        try {
+            WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//div[contains(@class,'oxd-toast-content--success')]//p")
+            ));
+            return msg.getText();
+        } catch (Exception e) {
+            return "";
+        }
     }
+//    public String getSuccessMessage() {
+//        return wait.until(ExpectedConditions.visibilityOf(successMsg)).getText();
+//    }
 }

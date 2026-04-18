@@ -28,29 +28,47 @@ public class Attendance {
     // ✅ FIXED LOCATOR (TEXT BASED = STABLE)
     @FindBy(xpath = "//button[contains(.,'In')]")
     WebElement punchInBtn;
+    
+    @FindBy(xpath = "//p[contains(@class,'toast-message')]")
+    WebElement successMsg;
 
     public void openTimeModule() {
         wait.until(ExpectedConditions.elementToBeClickable(timeMenu)).click();
     }
 
     public void openAttendanceSection() {
+        openTimeModule();   // 🔥 ADD THIS LINE
         wait.until(ExpectedConditions.elementToBeClickable(attendanceSection)).click();
     }
 
     public void openPunchSection() {
+        openTimeModule();   // 🔥 ADD
+        wait.until(ExpectedConditions.elementToBeClickable(attendanceSection)).click(); // 🔥 ADD
         wait.until(ExpectedConditions.elementToBeClickable(punchPage)).click();
     }
 
     public void clickPunchIn() {
+
+        // wait for loader to disappear
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(
+            By.xpath("//div[contains(@class,'oxd-form-loader')]")
+        ));
+
         wait.until(ExpectedConditions.elementToBeClickable(punchInBtn)).click();
     }
-
-    public boolean isPunchInButtonGone() {
+    
+    public String getSuccessMessage() {
         try {
-            wait.until(ExpectedConditions.invisibilityOf(punchInBtn));
-            return true;
+            WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//div[contains(@class,'oxd-toast-content--success')]//p")
+            ));
+            return msg.getText();
         } catch (Exception e) {
-            return false;
+            return "";
         }
     }
+
+//	public String getSuccessMessage() {
+//		return wait.until(ExpectedConditions.visibilityOf(successMsg)).getText();
+//	}
 }

@@ -17,6 +17,8 @@ public class Reports {
     }
 
     // ================= LOCATORS =================
+    @FindBy(xpath = "//span[normalize-space()='Time']")
+    WebElement timeMenu;
 
     @FindBy(xpath = "//span[normalize-space()='Reports']")
     WebElement reportsSection;
@@ -33,6 +35,7 @@ public class Reports {
     // ================= ACTION METHODS =================
 
     public void openReportsSection() {
+        wait.until(ExpectedConditions.elementToBeClickable(timeMenu)).click(); // 🔥 ADD
         wait.until(ExpectedConditions.elementToBeClickable(reportsSection)).click();
     }
 
