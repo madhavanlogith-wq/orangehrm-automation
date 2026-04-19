@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OrangeHRM_Suite" class="navigator-link">
-              <span class="suite-name border-passed">OrangeHRM Suite</span>
+              <span class="suite-name border-failed">OrangeHRM Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRM_Suite" class="hide-methods failed suite-OrangeHRM_Suite"> (hide)</a> <!-- hide-methods failed suite-OrangeHRM_Suite -->
+                      <a href="#" panel-name="suite-OrangeHRM_Suite" class="show-methods failed suite-OrangeHRM_Suite"> (show)</a> <!-- show-methods failed suite-OrangeHRM_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRM_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Punch in successfully&quot;, &quot;Time Module&quot;)">runScenario("Punch in successfully", "Time Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRM_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,12 @@
                     <div class="method-list-content passed suite-OrangeHRM_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Add new project with valid details&quot;, &quot;Time Module&quot;)">runScenario("Add new project with valid details", "Time Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Submit claim successfully and verify submission&quot;, &quot;Claims Module&quot;)">runScenario("Submit claim successfully and verify submission", "Claims Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Punch in successfully&quot;, &quot;Time Module&quot;)">runScenario("Punch in successfully", "Time Module")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Create and post content&quot;, &quot;Buzz Module&quot;)">runScenario("Create and post content", "Buzz Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,17 +132,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Add new project with valid details&quot;, &quot;Time Module&quot;)">runScenario("Add new project with valid details", "Time Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Search claim by reference ID and verify navigation using dynamic URL&quot;, &quot;Claims Module&quot;)">runScenario("Search claim by reference ID and verify navigation using dynamic URL", "Claims Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Create and post content&quot;, &quot;Buzz Module&quot;)">runScenario("Create and post content", "Buzz Module")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Add new project with valid details&quot;, &quot;Time Module&quot;)">runScenario("Add new project with valid details", "Time Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.orangehrm.testing.runner.RunnerIo" class="method navigator-link" hash-for-method="runScenario(&quot;Add new project with valid details&quot;, &quot;Time Module&quot;)">runScenario("Add new project with valid details", "Time Module")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OrangeHRM_Suite -->
@@ -148,22 +157,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRM_Suite" class="panel OrangeHRM_Suite">
+          <div class="suite-OrangeHRM_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.testing.runner.RunnerIo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Punch in successfully&quot;, &quot;Time Module&quot;)">
+                  </a> <!-- runScenario("Punch in successfully", "Time Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Punch in successfully","Time Module")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\aswin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60635}, goog:processID: 22096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60635/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 523e5f8c01537ee723c5ba2f9cbcdc65
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangeHRM.seleniumuiframwork_Object_repository.Loginpage2.enterUsername(Loginpage2.java:30)
+	at com.orangehrm.testing.stepdefinition.Hook.setUp(Hook.java:261)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Suite-class-failed -->
           <div class="suite-OrangeHRM_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.orangehrm.testing.runner.RunnerIo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Add new project with valid details&quot;, &quot;Time Module&quot;)">
-                  </a> <!-- runScenario("Add new project with valid details", "Time Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Add new project with valid details","Time Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Submit claim successfully and verify submission&quot;, &quot;Claims Module&quot;)">
@@ -176,10 +205,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Punch in successfully&quot;, &quot;Time Module&quot;)">
-                  </a> <!-- runScenario("Punch in successfully", "Time Module") -->
+                  <a name="runScenario(&quot;Create and post content&quot;, &quot;Buzz Module&quot;)">
+                  </a> <!-- runScenario("Create and post content", "Buzz Module") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Punch in successfully","Time Module")</span>
+                  <span class="parameters">("Create and post content","Buzz Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -196,16 +225,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Add new project with valid details&quot;, &quot;Time Module&quot;)">
-                  </a> <!-- runScenario("Add new project with valid details", "Time Module") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Add new project with valid details","Time Module")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Search claim by reference ID and verify navigation using dynamic URL&quot;, &quot;Claims Module&quot;)">
                   </a> <!-- runScenario("Search claim by reference ID and verify navigation using dynamic URL", "Claims Module") -->
                   <span class="method-name">runScenario</span>
@@ -216,10 +235,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Create and post content&quot;, &quot;Buzz Module&quot;)">
-                  </a> <!-- runScenario("Create and post content", "Buzz Module") -->
+                  <a name="runScenario(&quot;Add new project with valid details&quot;, &quot;Time Module&quot;)">
+                  </a> <!-- runScenario("Add new project with valid details", "Time Module") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Create and post content","Buzz Module")</span>
+                  <span class="parameters">("Add new project with valid details","Time Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add new project with valid details&quot;, &quot;Time Module&quot;)">
+                  </a> <!-- runScenario("Add new project with valid details", "Time Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add new project with valid details","Time Module")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -290,31 +319,31 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.orangehrm.testing.runner.RunnerIo')
-data.setCell(0, 3, 109713);
+data.setCell(0, 3, 115509);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.orangehrm.testing.runner.RunnerIo')
-data.setCell(1, 3, 78112);
+data.setCell(1, 3, 99177);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.orangehrm.testing.runner.RunnerIo')
-data.setCell(2, 3, 70281);
+data.setCell(2, 3, 61483);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.orangehrm.testing.runner.RunnerIo')
-data.setCell(3, 3, 68701);
+data.setCell(3, 3, 60343);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.orangehrm.testing.runner.RunnerIo')
-data.setCell(4, 3, 65609);
+data.setCell(4, 3, 54682);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'com.orangehrm.testing.runner.RunnerIo')
-data.setCell(5, 3, 61371);
+data.setCell(5, 3, 54546);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'com.orangehrm.testing.runner.RunnerIo')
-data.setCell(6, 3, 58098);
+data.setCell(6, 3, 52868);
 window.suiteTableData['OrangeHRM_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Suite'}
 return data;
 }
@@ -347,40 +376,42 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.testing.runner.RunnerIo</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@625732)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@41fecb8b)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Add new project with valid details", "Time Module")</span>
-                <span class="method-start">564 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">runScenario("Submit claim successfully and verify submission", "Claims Module")</span>
-                <span class="method-start">564 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Punch in successfully", "Time Module")</span>
-                <span class="method-start">564 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("No records when project not available", "Time Module")</span>
-                <span class="method-start">564 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Add new project with valid details", "Time Module")</span>
-                <span class="method-start">564 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Search claim by reference ID and verify navigation using dynamic URL", "Claims Module")</span>
-                <span class="method-start">564 ms</span>
+                <span class="method-start">430 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Create and post content", "Buzz Module")</span>
-                <span class="method-start">564 ms</span>
+                <span class="method-start">430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("No records when project not available", "Time Module")</span>
+                <span class="method-start">430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Punch in successfully", "Time Module")</span>
+                <span class="method-start">430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search claim by reference ID and verify navigation using dynamic URL", "Claims Module")</span>
+                <span class="method-start">430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add new project with valid details", "Time Module")</span>
+                <span class="method-start">430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add new project with valid details", "Time Module")</span>
+                <span class="method-start">430 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">110280 ms</span>
+                <span class="method-start">115941 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
