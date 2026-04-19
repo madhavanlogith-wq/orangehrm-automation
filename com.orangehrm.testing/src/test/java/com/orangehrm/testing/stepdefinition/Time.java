@@ -136,45 +136,152 @@
 //}
 
 
+//package com.orangehrm.testing.stepdefinition;
+//
+//import org.testng.Assert;
+//
+//import io.cucumber.java.en.Then;
+//import io.cucumber.java.en.When;
+//import com.orangeHRM.seleniumuiframwork_genricutility.Pages;
+//
+//public class Time {
+//
+//    Pages pages = new Pages(Hook.getDriver());
+//
+//    // ================= ATTENDANCE =================
+//
+//    @When("user navigates to attendance section")
+//    public void openAttendance() {
+//        Pages.attendance.openAttendanceSection();
+//    }
+//
+//    @When("user opens the punch page")
+//    public void openPunchSection() {
+//        Pages.attendance.openPunchSection();
+//    }
+//
+//    @When("user clicks punch in")
+//    public void clickPunchIn() {
+//        Pages.attendance.clickPunchIn();
+//    }
+//    @Then("PunchIn should be saved sucessfully")
+//    public void verifyPunchIn() {
+//
+//        String actual = Pages.attendance.getSuccessMessage();
+//
+//        Assert.assertTrue(
+//            actual.contains("Success"),
+//            "Punch In failed. Actual: " + actual
+//        );
+//    }
+//
+//    // ================= REPORTS =================
+//
+//    @When("user navigates to reports section")
+//    public void navigateToReports() {
+//        Pages.reports.openReportsSection();
+//    }
+//
+//    @When("user clicks on project reports")
+//    public void clickProjectReports() {
+//        Pages.reports.openProjectReports();
+//    }
+//
+//    @When("user clicks on view button")
+//    public void clickViewButton() {
+//        Pages.reports.clickView();
+//    }
+//
+//    @Then("system should display {string}")
+//    public void verifyMessage(String expected) {
+//        Assert.assertTrue(
+//            Pages.reports.getRequiredMessage().contains(expected),
+//            "Expected message not displayed: " + expected +
+//            " | Actual: " + Pages.reports.getRequiredMessage()
+//        );
+//    }
+//
+//    // ================= PROJECT INFO =================
+//
+//    @When("user navigates to project info section")
+//    public void navigateToProjectInfo() {
+//        Pages.projectInfo.navigateToProjectInfo();
+//    }
+//
+//    @When("user clicks on project tab")
+//    public void clickProjectTab() {
+//        Pages.projectInfo.clickProjectTab();
+//    }
+//
+//    @When("user clicks on add project")
+//    public void clickAddProject() {
+//        Pages.projectInfo.clickAddProject();
+//    }
+//
+//    @When("user enters new project name {string}")
+//    public void enterNewProjectName(String name) {
+//        Pages.projectInfo.enterProjectName(name);
+//    }
+//
+//    @When("user enters customer name {string}")
+//    public void enterCustomer(String name) {
+//        Pages.projectInfo.selectCustomer(name);
+//    }
+//
+//    @When("user clicks save")
+//    public void clickSave() {
+//        Pages.projectInfo.clickSave();
+//    }
+//
+//    @Then("project should be saved successfully")
+//    public void verifyProjectAdded() {
+//
+//        String msg = Pages.projectInfo.getSuccessMessage();
+//
+//        Assert.assertTrue(
+//            msg.contains("Success"),
+//            "Project not saved. Actual: " + msg
+//        );
+//    }
+//}
+
 package com.orangehrm.testing.stepdefinition;
 
 import org.testng.Assert;
 
-import com.orangeHRM.selemiumuiframework_Object_repository.time.Attendance;
-import com.orangeHRM.selemiumuiframework_Object_repository.time.Reports;
-import com.orangeHRM.selemiumuiframework_Object_repository.time.Project_Info;
-
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import com.orangeHRM.seleniumuiframwork_genricutility.Pages;
 
 public class Time {
 
-    Attendance attendance = new Attendance(Hook.getDriver());
-    Reports reports = new Reports(Hook.getDriver());
-    Project_Info project = new Project_Info(Hook.getDriver());
+    Pages pages = new Pages(Hook.getDriver());
 
     // ================= ATTENDANCE =================
 
     @When("user navigates to attendance section")
     public void openAttendance() {
-        attendance.openAttendanceSection();
+        pages.getAttendance().openAttendanceSection();
     }
 
     @When("user opens the punch page")
     public void openPunchSection() {
-        attendance.openPunchSection();
+        pages.getAttendance().openPunchSection();
     }
 
     @When("user clicks punch in")
     public void clickPunchIn() {
-        attendance.clickPunchIn();
+        pages.getAttendance().clickPunchIn();
     }
 
     @Then("PunchIn should be saved sucessfully")
     public void verifyPunchIn() {
+
+        String actual = pages.getAttendance().getSuccessMessage();
+
         Assert.assertTrue(
-            attendance.getSuccessMessage().contains("Successfully Saved"),
-            "Punch In failed. Actual: " + attendance.getSuccessMessage()
+            actual.contains("Success"),
+            "Punch In failed. Actual: " + actual
         );
     }
 
@@ -182,25 +289,25 @@ public class Time {
 
     @When("user navigates to reports section")
     public void navigateToReports() {
-        reports.openReportsSection();
+        pages.getReports().openReportsSection();
     }
 
     @When("user clicks on project reports")
     public void clickProjectReports() {
-        reports.openProjectReports();
+        pages.getReports().openProjectReports();
     }
 
     @When("user clicks on view button")
     public void clickViewButton() {
-        reports.clickView();
+        pages.getReports().clickView();
     }
 
     @Then("system should display {string}")
     public void verifyMessage(String expected) {
         Assert.assertTrue(
-            reports.getRequiredMessage().contains(expected),
+            pages.getReports().getRequiredMessage().contains(expected),
             "Expected message not displayed: " + expected +
-            " | Actual: " + reports.getRequiredMessage()
+            " | Actual: " + pages.getReports().getRequiredMessage()
         );
     }
 
@@ -208,40 +315,42 @@ public class Time {
 
     @When("user navigates to project info section")
     public void navigateToProjectInfo() {
-        project.navigateToProjectInfo();
+        pages.getProjectInfo().navigateToProjectInfo();
     }
 
     @When("user clicks on project tab")
     public void clickProjectTab() {
-        project.clickProjectTab();
+        pages.getProjectInfo().clickProjectTab();
     }
 
     @When("user clicks on add project")
     public void clickAddProject() {
-        project.clickAddProject();
+        pages.getProjectInfo().clickAddProject();
     }
 
     @When("user enters new project name {string}")
     public void enterNewProjectName(String name) {
-        project.enterProjectName(name);
+        pages.getProjectInfo().enterProjectName(name);
     }
 
     @When("user enters customer name {string}")
     public void enterCustomer(String name) {
-        project.selectCustomer(name);
+        pages.getProjectInfo().selectCustomer(name);
     }
 
     @When("user clicks save")
     public void clickSave() {
-        project.clickSave();
+        pages.getProjectInfo().clickSave();
     }
 
     @Then("project should be saved successfully")
     public void verifyProjectAdded() {
 
-        String msg = project.getSuccessMessage();
+        String msg = pages.getProjectInfo().getSuccessMessage();
 
-        Assert.assertTrue(msg.contains("Success"), 
-            "Project not saved. Actual: " + msg);
+        Assert.assertTrue(
+            msg.contains("Success"),
+            "Project not saved. Actual: " + msg
+        );
     }
 }

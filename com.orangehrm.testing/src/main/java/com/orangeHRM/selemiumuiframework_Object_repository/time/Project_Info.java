@@ -84,20 +84,10 @@ public class Project_Info {
 
         By toast = By.xpath("//div[contains(@class,'oxd-toast-content--success')]//p");
 
-        for (int i = 0; i < 5; i++) {
-            try {
-                String msg = driver.findElement(toast).getText();
-                if (!msg.isEmpty()) {
-                    return msg;
-                }
-            } catch (Exception ignored) {}
+        WebElement msg = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOfElementLocated(toast));
 
-            try {
-                Thread.sleep(300); // small retry window
-            } catch (InterruptedException e) {}
-        }
-
-        return "";
+        return msg.getText();
     }
 //    public String getSuccessMessage() {
 //        return wait.until(ExpectedConditions.visibilityOf(successMsg)).getText();

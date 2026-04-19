@@ -33,7 +33,12 @@ public class Attendance {
     WebElement successMsg;
 
     public void openTimeModule() {
-        wait.until(ExpectedConditions.elementToBeClickable(timeMenu)).click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+        wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//span[normalize-space()='Time']")
+        )).click();
     }
 
     public void openAttendanceSection() {
@@ -62,13 +67,15 @@ public class Attendance {
             WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//div[contains(@class,'oxd-toast-content--success')]//p")
             ));
-            return msg.getText();
+
+            return msg.getText().trim();
+
         } catch (Exception e) {
             return "";
         }
+    }
     }
 
 //	public String getSuccessMessage() {
 //		return wait.until(ExpectedConditions.visibilityOf(successMsg)).getText();
 //	}
-}

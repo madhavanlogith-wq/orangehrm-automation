@@ -31,7 +31,7 @@ public class RunnerIo extends AbstractTestNGCucumberTests {
 //import io.cucumber.testng.CucumberOptions;
 //
 //@CucumberOptions(
-//        features = "src/test/java/com/orangehrm/testing/featurefile/buzzfeaturefile.feature",
+//        features = "src/test/java/com/orangehrm/testing/featurefile/timefeaturefile.feature",
 //        glue = {"com.orangehrm.testing.stepdefinition"},
 //        plugin = {
 //                "pretty",

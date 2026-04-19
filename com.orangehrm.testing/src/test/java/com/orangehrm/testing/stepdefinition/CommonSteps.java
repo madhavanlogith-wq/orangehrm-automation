@@ -1,33 +1,23 @@
 package com.orangehrm.testing.stepdefinition;
-import com.orangehrm.testing.stepdefinition.Hook;
 
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.*;
-
-import java.time.Duration;
-
 import io.cucumber.java.en.Given;
+import com.orangeHRM.seleniumuiframwork_genricutility.Pages;
 
 public class CommonSteps {
 
     WebDriver driver;
-    WebDriverWait wait;
-    
+    Pages pages;
+
     public CommonSteps() {
-        this.driver =Hook.getDriver();   // ✅ safe access
+        this.driver = Hook.getDriver();
+        this.pages = new Pages(driver);
     }
 
     @Given("user is on Time page")
     public void user_is_on_time_page() {
-    	
-    	wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // ✅ create after driver ready
 
-
-        // ✅ WAIT for Time menu to be visible
-        wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//span[normalize-space()='Time']")
-        )).click();
+        // Navigate using Page Object (NOT locator in step)
+        pages.getAttendance().openTimeModule();
     }
 }
