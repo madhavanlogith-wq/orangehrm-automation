@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 17 08:38:45 IST 2026</td>
+<td>Started on:</td><td>Sun Apr 19 00:47:58 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (832 ms)</td>
+<tr><td>Total time:</td><td>260 seconds (260105 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,963 +76,202 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.orangehrm.testing.runner.runnerio.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.runnerio<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new education", "OrangeHRM Admin Module Automation"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 8 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to education&quot;)
-public void user_navigates_to_education() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters education name {string}&quot;)
-public void user_enters_education_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;education should be added successfully&quot;)
-public void education_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1346799731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1346799731'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 8 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to education&quot;)
-public void user_navigates_to_education() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters education name {string}&quot;)
-public void user_enters_education_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;education should be added successfully&quot;)
-public void education_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new location", "OrangeHRM Admin Job Module Automation"</td>
+<td><div><pre>java.lang.AssertionError: expected [Successfully Saved] but found [Success]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.orangehrm.testing.stepdefinition.orgAndQuaTest.location_should_be_added_successfully(orgAndQuaTest.java:55)
+	at ✽.location should be added successfully(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/orgAndQua.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace827039307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace827039307'><pre>java.lang.AssertionError: expected [Successfully Saved] but found [Success]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.orangehrm.testing.stepdefinition.orgAndQuaTest.location_should_be_added_successfully(orgAndQuaTest.java:55)
+	at ✽.location should be added successfully(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/orgAndQua.feature:17)
 </pre></div></td>
-<td>0</td>
-<td>com.orangehrm.testing.runner.runnerio@24aed80c</td></tr>
+<td>23</td>
+<td>com.orangehrm.testing.runner.RunnerIo@15888343</td></tr>
 <tr>
-<td title='com.orangehrm.testing.runner.runnerio.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.runnerio<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new license", "OrangeHRM Admin Module Automation"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 8 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to licenses&quot;)
-public void user_navigates_to_licenses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters license name {string}&quot;)
-public void user_enters_license_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;license should be added successfully&quot;)
-public void license_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace317562294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace317562294'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 8 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to licenses&quot;)
-public void user_navigates_to_licenses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters license name {string}&quot;)
-public void user_enters_license_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;license should be added successfully&quot;)
-public void license_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add custom field with dropdown values", "OrangeHRM Admin Job Module Automation"</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.56)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ebad82b910376a9067828a99a9ffdc2, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\dhans\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50034}, goog:processID: 34344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50034/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ebad82b910376a9067828a99a9ffdc2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
+	at com.orangeHRM.seleniumuiframwork_Object_repository.LoginPage.setUserName(LoginPage.java:41)
+	at com.orangeHRM.seleniumuiframwork_Object_repository.LoginPage.loginPage(LoginPage.java:101)
+	at com.orangehrm.testing.stepdefinition.Hook.setup(Hook.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1881218549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1881218549'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.56)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ebad82b910376a9067828a99a9ffdc2, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\dhans\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50034}, goog:processID: 34344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50034/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ebad82b910376a9067828a99a9ffdc2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
+	at com.orangeHRM.seleniumuiframwork_Object_repository.LoginPage.setUserName(LoginPage.java:41)
+	at com.orangeHRM.seleniumuiframwork_Object_repository.LoginPage.loginPage(LoginPage.java:101)
+	at com.orangehrm.testing.stepdefinition.Hook.setup(Hook.java:36)
 </pre></div></td>
-<td>0</td>
-<td>com.orangehrm.testing.runner.runnerio@24aed80c</td></tr>
+<td>87</td>
+<td>com.orangehrm.testing.runner.RunnerIo@15888343</td></tr>
 <tr>
-<td title='com.orangehrm.testing.runner.runnerio.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.runnerio<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new nationality", "OrangeHRM Admin Module Automation"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 8 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to nationalities&quot;)
-public void user_navigates_to_nationalities() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters nationality {string}&quot;)
-public void user_enters_nationality(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;nationality should be added successfully&quot;)
-public void nationality_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1594791957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1594791957'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 8 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to nationalities&quot;)
-public void user_navigates_to_nationalities() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters nationality {string}&quot;)
-public void user_enters_nationality(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;nationality should be added successfully&quot;)
-public void nationality_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add employee with valid details", "OrangeHRM Admin Job Module Automation"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[.=&apos;Successfully Saved&apos;]&quot;}
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b98c5432442a2ad1d7cda398c8b3a2d, findElement {using=xpath, value=//p[.=&apos;Successfully Saved&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\dhans\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55333}, goog:processID: 17320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55333/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b98c5432442a2ad1d7cda398c8b3a2d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.orangehrm.testing.stepdefinition.addEmpTest.system_should_display_message(addEmpTest.java:38)
+	at ✽.system should display message &quot;Successfully Saved&quot;(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/addEmp.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1545563479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1545563479'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[.=&apos;Successfully Saved&apos;]&quot;}
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b98c5432442a2ad1d7cda398c8b3a2d, findElement {using=xpath, value=//p[.=&apos;Successfully Saved&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\dhans\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55333}, goog:processID: 17320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55333/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b98c5432442a2ad1d7cda398c8b3a2d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.orangehrm.testing.stepdefinition.addEmpTest.system_should_display_message(addEmpTest.java:38)
+	at ✽.system should display message &quot;Successfully Saved&quot;(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/addEmp.feature:14)
 </pre></div></td>
-<td>0</td>
-<td>com.orangehrm.testing.runner.runnerio@24aed80c</td></tr>
+<td>54</td>
+<td>com.orangehrm.testing.runner.RunnerIo@15888343</td></tr>
 <tr>
-<td title='com.orangehrm.testing.runner.runnerio.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.runnerio<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new location", "OrangeHRM Admin Module Automation"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to locations&quot;)
-public void user_navigates_to_locations() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters location name {string}&quot;)
-public void user_enters_location_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user selects country {string}&quot;)
-public void user_selects_country(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters city {string}&quot;)
-public void user_enters_city(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters address {string}&quot;)
-public void user_enters_address(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;location should be added successfully&quot;)
-public void location_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace85415531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace85415531'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to locations&quot;)
-public void user_navigates_to_locations() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters location name {string}&quot;)
-public void user_enters_location_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user selects country {string}&quot;)
-public void user_selects_country(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters city {string}&quot;)
-public void user_enters_city(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters address {string}&quot;)
-public void user_enters_address(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;location should be added successfully&quot;)
-public void location_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new user with all fields", "OrangeHRM Admin Module Automation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@role=&apos;option&apos;]//span[contains(text(),&apos;Deniz  Acar&apos;)] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\dhans\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53776}, goog:processID: 13176, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53776/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bb1335aa8d60fd85cf70ca1fb6b34ae
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangeHRM.seleniumuiframwork_Object_repository_Admin.addUserPage.setEmployeeNameTextField(addUserPage.java:131)
+	at com.orangehrm.testing.stepdefinition.addUserTest.user_enters_employee_name(addUserTest.java:48)
+	at ✽.user enters employee name &quot;Deniz  Acar&quot;(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace81355344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace81355344'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@role=&apos;option&apos;]//span[contains(text(),&apos;Deniz  Acar&apos;)] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\dhans\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53776}, goog:processID: 13176, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53776/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bb1335aa8d60fd85cf70ca1fb6b34ae
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangeHRM.seleniumuiframwork_Object_repository_Admin.addUserPage.setEmployeeNameTextField(addUserPage.java:131)
+	at com.orangehrm.testing.stepdefinition.addUserTest.user_enters_employee_name(addUserTest.java:48)
+	at ✽.user enters employee name &quot;Deniz  Acar&quot;(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:14)
 </pre></div></td>
-<td>0</td>
-<td>com.orangehrm.testing.runner.runnerio@24aed80c</td></tr>
+<td>49</td>
+<td>com.orangehrm.testing.runner.RunnerIo@15888343</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.orangehrm.testing.runner.runnerio.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.runnerio<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new job title with all fields", "OrangeHRM Admin Module Automation"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to job titles&quot;)
-public void user_navigates_to_job_titles() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters job title {string}&quot;)
-public void user_enters_job_title(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters job description {string}&quot;)
-public void user_enters_job_description(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user uploads job specification file {string}&quot;)
-public void user_uploads_job_specification_file(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user adds job note {string}&quot;)
-public void user_adds_job_note(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;job title should be added successfully&quot;)
-public void job_title_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace768185844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace768185844'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to job titles&quot;)
-public void user_navigates_to_job_titles() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters job title {string}&quot;)
-public void user_enters_job_title(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters job description {string}&quot;)
-public void user_enters_job_description(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user uploads job specification file {string}&quot;)
-public void user_uploads_job_specification_file(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user adds job note {string}&quot;)
-public void user_adds_job_note(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;job title should be added successfully&quot;)
-public void job_title_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div></td>
-<td>0</td>
-<td>com.orangehrm.testing.runner.runnerio@24aed80c</td></tr>
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add employee without mandatory fields", "OrangeHRM Admin Job Module Automation"</td>
+<td></td>
+<td>18</td>
+<td>com.orangehrm.testing.runner.RunnerIo@15888343</td></tr>
 <tr>
-<td title='com.orangehrm.testing.runner.runnerio.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.runnerio<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new skill", "OrangeHRM Admin Module Automation"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 9 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to skills&quot;)
-public void user_navigates_to_skills() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters skill name {string}&quot;)
-public void user_enters_skill_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters skill description {string}&quot;)
-public void user_enters_skill_description(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;skill should be added successfully&quot;)
-public void skill_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace87060781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace87060781'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 9 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to skills&quot;)
-public void user_navigates_to_skills() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters skill name {string}&quot;)
-public void user_enters_skill_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters skill description {string}&quot;)
-public void user_enters_skill_description(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;skill should be added successfully&quot;)
-public void skill_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div></td>
-<td>0</td>
-<td>com.orangehrm.testing.runner.runnerio@24aed80c</td></tr>
-<tr>
-<td title='com.orangehrm.testing.runner.runnerio.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.runnerio<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new user with all fields", "OrangeHRM Admin Module Automation"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 12 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user selects user role {string}&quot;)
-public void user_selects_user_role(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters employee name {string}&quot;)
-public void user_enters_employee_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user selects status {string}&quot;)
-public void user_selects_status(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters username {string}&quot;)
-public void user_enters_username(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters password {string}&quot;)
-public void user_enters_password(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters confirm password {string}&quot;)
-public void user_enters_confirm_password(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should be added successfully&quot;)
-public void user_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace579294521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace579294521'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 12 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user selects user role {string}&quot;)
-public void user_selects_user_role(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters employee name {string}&quot;)
-public void user_enters_employee_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user selects status {string}&quot;)
-public void user_selects_status(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters username {string}&quot;)
-public void user_enters_username(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters password {string}&quot;)
-public void user_enters_password(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters confirm password {string}&quot;)
-public void user_enters_confirm_password(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should be added successfully&quot;)
-public void user_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div></td>
-<td>0</td>
-<td>com.orangehrm.testing.runner.runnerio@24aed80c</td></tr>
-<tr>
-<td title='com.orangehrm.testing.runner.runnerio.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.runnerio<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new membership", "OrangeHRM Admin Module Automation"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 8 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to memberships&quot;)
-public void user_navigates_to_memberships() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters membership name {string}&quot;)
-public void user_enters_membership_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;membership should be added successfully&quot;)
-public void membership_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1238080693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1238080693'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user launches browser and opens application&apos; and 8 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;user launches browser and opens application&quot;)
-public void user_launches_browser_and_opens_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters valid username {string} and password {string}&quot;)
-public void user_enters_valid_username_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks login button&quot;)
-public void user_clicks_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;user should see dashboard page with all elements&quot;)
-public void user_should_see_dashboard_page_with_all_elements() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user navigates to memberships&quot;)
-public void user_navigates_to_memberships() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks add button&quot;)
-public void user_clicks_add_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user enters membership name {string}&quot;)
-public void user_enters_membership_name(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user clicks save button&quot;)
-public void user_clicks_save_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;membership should be added successfully&quot;)
-public void membership_should_be_added_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.user launches browser and opens application(file:///D:/project1/orangehrm-automation/com.orangehrm.testing/./src/test/java/com/orangehrm/testing/featurefile/AdminUserManagement.feature:4)
-</pre></div></td>
-<td>0</td>
-<td>com.orangehrm.testing.runner.runnerio@24aed80c</td></tr>
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new job title with all fields", "OrangeHRM Admin Job Module Automation"</td>
+<td></td>
+<td>25</td>
+<td>com.orangehrm.testing.runner.RunnerIo@15888343</td></tr>
 </table><p>
 </body>
 </html>

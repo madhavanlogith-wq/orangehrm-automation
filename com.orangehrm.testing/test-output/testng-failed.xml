@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orangehrm.testing.runner.runnerio">
+      <class name="com.orangehrm.testing.runner.RunnerIo">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7"/>
+          <include name="runScenario" invocation-numbers="0 1 4 5"/>
         </methods>
-      </class> <!-- com.orangehrm.testing.runner.runnerio -->
+      </class> <!-- com.orangehrm.testing.runner.RunnerIo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
