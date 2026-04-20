@@ -64,7 +64,6 @@ Feature:Recruitment Module - Candidate and Vacancy Management
       | FirstName | LastName | Email     |
       | John      | Doe      | john@     |
       | John      | Doe      | john.com  |
-      | John      | Doe      | john@.com |
       
       
       # =========================

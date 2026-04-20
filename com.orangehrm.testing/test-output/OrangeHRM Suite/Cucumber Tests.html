@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Cucumber Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 19 21:31:51 IST 2026</td>
+<td>Started on:</td><td>Mon Apr 20 08:15:42 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>317 seconds (317938 ms)</td>
+<tr><td>Total time:</td><td>57 seconds (57108 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,72 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add candidate with valid mandatory details", "Recruitment Module - Candidate and Vacancy Management"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit&apos;]&quot;}
-  (Session info: MicrosoftEdge=147.0.3912.72)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Recruitment&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [841ddf8152b6e8b0209b87232f64141c, findElement {value=//button[@type=&apos;submit&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 8648, ms:edgeOptions: {debuggerAddress: localhost:62502}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62502/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 841ddf8152b6e8b0209b87232f64141c
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 29520, ms:edgeOptions: {debuggerAddress: localhost:54743}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54743/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1376b6739226360e68517d8f43236aba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.goToRecruitment(RecruitmentSteps.java:27)
+	at ✽.User navigates to Recruitment module(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1049656817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1049656817'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Recruitment&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 29520, ms:edgeOptions: {debuggerAddress: localhost:54743}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54743/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1376b6739226360e68517d8f43236aba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.goToRecruitment(RecruitmentSteps.java:27)
+	at ✽.User navigates to Recruitment module(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:10)
+</pre></div></td>
+<td>45</td>
+<td>com.orangehrm.testing.runner.RunnerIo@5dda768f</td></tr>
+<tr>
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search and view vacancy details", "Recruitment Module - Candidate and Vacancy Management"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Recruitment&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 29520, ms:edgeOptions: {debuggerAddress: localhost:54743}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54743/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1376b6739226360e68517d8f43236aba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.navigate_vacancy_list(RecruitmentSteps.java:119)
+	at ✽.User navigates to Vacancy list page(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1958543567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1958543567'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Recruitment&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 29520, ms:edgeOptions: {debuggerAddress: localhost:54743}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54743/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1376b6739226360e68517d8f43236aba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.navigate_vacancy_list(RecruitmentSteps.java:119)
+	at ✽.User navigates to Vacancy list page(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:45)
+</pre></div></td>
+<td>24</td>
+<td>com.orangehrm.testing.runner.RunnerIo@5dda768f</td></tr>
+<tr>
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate invalid email formats while adding candidate", "Recruitment Module - Candidate and Vacancy Management"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=147.0.3912.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [92b41a7155f031453d21643402d2b0ea, clickElement {id=f.D49A5FD2AB53E00369ED653D91EBF48B.d.005A2E90771E96B22677BEA6F7723A7E.e.6}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 10008, ms:edgeOptions: {debuggerAddress: localhost:54739}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54739/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (92b41a7155f031453d21643402d2b0ea)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: 92b41a7155f031453d21643402d2b0ea
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -93,35 +150,23 @@ Session ID: 841ddf8152b6e8b0209b87232f64141c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:486)
-	at pages.CandidatePage.clickSave(CandidatePage.java:97)
-	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.click_save_button(RecruitmentSteps.java:164)
-	at ✽.User clicks Save button(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:16)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1544939985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1544939985'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit&apos;]&quot;}
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at pages.LoginPage.login(LoginPage.java:29)
+	at com.orangehrm.testing.stepdefinition.Hooks.setup(Hooks.java:35)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace828656097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace828656097'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: MicrosoftEdge=147.0.3912.72)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [841ddf8152b6e8b0209b87232f64141c, findElement {value=//button[@type=&apos;submit&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 8648, ms:edgeOptions: {debuggerAddress: localhost:62502}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62502/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 841ddf8152b6e8b0209b87232f64141c
+Command: [92b41a7155f031453d21643402d2b0ea, clickElement {id=f.D49A5FD2AB53E00369ED653D91EBF48B.d.005A2E90771E96B22677BEA6F7723A7E.e.6}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 10008, ms:edgeOptions: {debuggerAddress: localhost:54739}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54739/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (92b41a7155f031453d21643402d2b0ea)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: 92b41a7155f031453d21643402d2b0ea
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -132,28 +177,123 @@ Session ID: 841ddf8152b6e8b0209b87232f64141c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at pages.LoginPage.login(LoginPage.java:29)
+	at com.orangehrm.testing.stepdefinition.Hooks.setup(Hooks.java:35)
+</pre></div></td>
+<td>16</td>
+<td>com.orangehrm.testing.runner.RunnerIo@5dda768f</td></tr>
+<tr>
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create vacancy with valid details", "Recruitment Module - Candidate and Vacancy Management"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Recruitment&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 29520, ms:edgeOptions: {debuggerAddress: localhost:54743}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54743/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1376b6739226360e68517d8f43236aba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.goToVacancy(RecruitmentSteps.java:57)
+	at ✽.User navigates to Recruitment &gt; Vacancies section(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1605132389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605132389'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Recruitment&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 29520, ms:edgeOptions: {debuggerAddress: localhost:54743}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54743/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1376b6739226360e68517d8f43236aba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.goToVacancy(RecruitmentSteps.java:57)
+	at ✽.User navigates to Recruitment &gt; Vacancies section(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:23)
+</pre></div></td>
+<td>35</td>
+<td>com.orangehrm.testing.runner.RunnerIo@5dda768f</td></tr>
+<tr>
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate system shows error when saving empty form", "Recruitment Module - Candidate and Vacancy Management"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Recruitment&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 29520, ms:edgeOptions: {debuggerAddress: localhost:54743}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54743/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1376b6739226360e68517d8f43236aba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.user_is_on_add_candidate_page(RecruitmentSteps.java:143)
+	at ✽.User is on Add Candidate page(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:75)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1647611949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1647611949'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Recruitment&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 29520, ms:edgeOptions: {debuggerAddress: localhost:54743}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54743/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1376b6739226360e68517d8f43236aba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.user_is_on_add_candidate_page(RecruitmentSteps.java:143)
+	at ✽.User is on Add Candidate page(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:75)
+</pre></div></td>
+<td>55</td>
+<td>com.orangehrm.testing.runner.RunnerIo@5dda768f</td></tr>
+<tr>
+<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate invalid email formats while adding candidate", "Recruitment Module - Candidate and Vacancy Management"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, findElement {using=xpath, value=//span[text()=&apos;Recruitment&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 28788, ms:edgeOptions: {debuggerAddress: localhost:54741}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54741/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:486)
-	at pages.CandidatePage.clickSave(CandidatePage.java:97)
-	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.click_save_button(RecruitmentSteps.java:164)
-	at ✽.User clicks Save button(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:16)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:198)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:632)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:629)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.user_is_on_add_candidate_page(RecruitmentSteps.java:143)
+	at ✽.User is on Add Candidate page(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:55)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2001567719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2001567719'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, findElement {using=xpath, value=//span[text()=&apos;Recruitment&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 28788, ms:edgeOptions: {debuggerAddress: localhost:54741}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\thiri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54741/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:198)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:632)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:629)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.RecruitmentPage.goToRecruitment(RecruitmentPage.java:32)
+	at com.orangehrm.testing.stepdefinition.RecruitmentSteps.user_is_on_add_candidate_page(RecruitmentSteps.java:143)
+	at ✽.User is on Add Candidate page(file:///C:/Users/thiri/OneDrive/Desktop/SeleniumTesting/orangehrm-automation/com.orangehrm.testing/src/test/java/com/orangehrm/testing/featurefile/featurefile.feature:55)
 </pre></div></td>
-<td>51</td>
-<td>com.orangehrm.testing.runner.RunnerIo@544fa968</td></tr>
+<td>56</td>
+<td>com.orangehrm.testing.runner.RunnerIo@5dda768f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -164,40 +304,10 @@ Session ID: 841ddf8152b6e8b0209b87232f64141c
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search and view vacancy details", "Recruitment Module - Candidate and Vacancy Management"</td>
-<td></td>
-<td>17</td>
-<td>com.orangehrm.testing.runner.RunnerIo@544fa968</td></tr>
-<tr>
-<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate system shows error when saving empty form", "Recruitment Module - Candidate and Vacancy Management"</td>
-<td></td>
-<td>42</td>
-<td>com.orangehrm.testing.runner.RunnerIo@544fa968</td></tr>
-<tr>
-<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate invalid email formats while adding candidate", "Recruitment Module - Candidate and Vacancy Management"</td>
-<td></td>
-<td>44</td>
-<td>com.orangehrm.testing.runner.RunnerIo@544fa968</td></tr>
-<tr>
-<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate invalid email formats while adding candidate", "Recruitment Module - Candidate and Vacancy Management"</td>
-<td></td>
-<td>36</td>
-<td>com.orangehrm.testing.runner.RunnerIo@544fa968</td></tr>
-<tr>
-<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate invalid email formats while adding candidate", "Recruitment Module - Candidate and Vacancy Management"</td>
-<td></td>
-<td>51</td>
-<td>com.orangehrm.testing.runner.RunnerIo@544fa968</td></tr>
-<tr>
-<td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create vacancy with valid details", "Recruitment Module - Candidate and Vacancy Management"</td>
-<td></td>
-<td>48</td>
-<td>com.orangehrm.testing.runner.RunnerIo@544fa968</td></tr>
-<tr>
 <td title='com.orangehrm.testing.runner.RunnerIo.runScenario()'><b>runScenario</b><br>Test class: com.orangehrm.testing.runner.RunnerIo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search and view candidate details", "Recruitment Module - Candidate and Vacancy Management"</td>
 <td></td>
-<td>25</td>
-<td>com.orangehrm.testing.runner.RunnerIo@544fa968</td></tr>
+<td>32</td>
+<td>com.orangehrm.testing.runner.RunnerIo@5dda768f</td></tr>
 </table><p>
 </body>
 </html>
