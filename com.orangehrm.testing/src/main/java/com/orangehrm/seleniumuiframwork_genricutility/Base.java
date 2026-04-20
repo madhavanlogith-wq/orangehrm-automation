@@ -14,6 +14,7 @@ public class Base {
         return driver.get();
     }
 
+
     public static void unload() {
         driver.remove();   // removes thread reference
     }

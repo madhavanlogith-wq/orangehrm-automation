@@ -1,4 +1,4 @@
-package com.orangehrm.testing.objectrepository.leaveModule;
+package com.orangehrm.testing.objectrepository.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

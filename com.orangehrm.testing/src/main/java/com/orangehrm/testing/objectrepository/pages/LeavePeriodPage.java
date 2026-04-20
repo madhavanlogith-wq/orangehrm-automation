@@ -1,4 +1,4 @@
-package com.orangehrm.testing.objectrepository.leaveModule;
+package com.orangehrm.testing.objectrepository.pages;
 
 import java.time.Duration;
 

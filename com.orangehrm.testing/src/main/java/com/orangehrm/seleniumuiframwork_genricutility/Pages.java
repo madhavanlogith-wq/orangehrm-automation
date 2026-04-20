@@ -3,9 +3,7 @@ package com.orangehrm.seleniumuiframwork_genricutility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.orangehrm.seleniumuiframwork_Object_repository.DashbordPage;
-import com.orangehrm.seleniumuiframwork_Object_repository.LoginPage;
-import com.orangehrm.testing.objectrepository.leaveModule.*;
+import com.orangehrm.testing.objectrepository.pages.*;
 
 public class Pages {
 

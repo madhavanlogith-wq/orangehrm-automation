@@ -1,4 +1,4 @@
-package com.orangehrm.seleniumuiframwork_Object_repository;
+package com.orangehrm.testing.objectrepository.pages;
 
 
 import org.openqa.selenium.WebElement;
